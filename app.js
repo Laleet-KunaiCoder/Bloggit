@@ -12,7 +12,6 @@ const dbURI = 'mongodb+srv://BloggIT:vyqnif-dyndoX-9gewzy@cluster0.limkl.mongodb
 mongoose.connect(dbURI)
     .then((result) => {
         console.log('connected to the db')
-        app.listen(3000)
     })
     .catch((err) => {
         console.log('not connected')
