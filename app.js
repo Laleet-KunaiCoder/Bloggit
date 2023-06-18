@@ -32,6 +32,6 @@ app.use(blogRoutes)
 app.use((req, res) => {
   res.status(404).render('404', { title: '404' })
 })
-app.listen(8080, () => {
+app.listen(port, () => {
   console.log(`listehing at ${port}`)
 })
